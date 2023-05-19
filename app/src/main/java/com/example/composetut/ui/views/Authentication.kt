@@ -4,7 +4,10 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.Card
 import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -60,6 +63,15 @@ fun AuthenticationForm(modifier: Modifier = Modifier, authenticationMode: Authen
     Column(modifier = modifier, horizontalAlignment = Alignment.CenterHorizontally) {
         Spacer(modifier = Modifier.height(32.dp))
         AuthenticationTitle(authenticationMode = authenticationMode)
+        Spacer(modifier = Modifier.height(40.dp))
+        Card(modifier = Modifier.fillMaxWidth().padding(horizontal = 32.dp), elevation = 4.dp) {
+            Column(
+                modifier = Modifier.padding(16.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+
+            }
+        }
     }
 }
 

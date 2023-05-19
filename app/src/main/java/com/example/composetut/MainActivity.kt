@@ -10,7 +10,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.composetut.data.AuthenticationMode
 import com.example.composetut.ui.theme.ComposeTutTheme
+import com.example.composetut.ui.views.Authentication
+import com.example.composetut.ui.views.AuthenticationForm
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("James")
+                    Authentication()
                 }
             }
         }
@@ -41,6 +44,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     ComposeTutTheme {
-        Greeting("James")
+        Authentication()
     }
 }

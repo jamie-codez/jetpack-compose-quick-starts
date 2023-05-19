@@ -1,6 +1,6 @@
 ### Jetpack Compose Tutorial
 
-*** Iam going to build a login and sign up screen application to practice Jetpack Compose ***
+> **_NOTE:_** Iam going to build a login and sign up screen application to practice Jetpack Compose 
 
 #### Environment
 
